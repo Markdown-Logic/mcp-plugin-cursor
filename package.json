@@ -1,0 +1,16 @@
+{
+  "name": "markdown-logic-cursor-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local validation for the Markdown Logic Cursor plugin; no npm distribution or runtime dependencies.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:remote": "node tools/check-remote.mjs",
+    "validate:release": "node tools/validate.mjs --release"
+  }
+}

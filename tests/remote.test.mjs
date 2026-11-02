@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import { test } from 'node:test';
+import { validateMetadata, validateInitialize, validateTools } from '../tools/remote-contract.mjs';
+const resource = {resource:'https://mcp.markdownlogic.com',authorization_servers:['https://auth.markdownlogic.com'],scopes_supported:['documents:read','documents:write','projects:read','releases:read'],bearer_methods_supported:['header']};
+const auth = {issuer:'https://auth.markdownlogic.com',authorization_endpoint:'https://auth.markdownlogic.com/oauth/authorize',token_endpoint:'https://auth.markdownlogic.com/oauth/token',registration_endpoint:'https://auth.markdownlogic.com/register',grant_types_supported:['authorization_code'],code_challenge_methods_supported:['S256'],token_endpoint_auth_methods_supported:['none']};
+const initialized = {jsonrpc:'2.0',id:1,result:{protocolVersion:'2025-11-25',serverInfo:{name:'Markdown Logic Public'},capabilities:{tools:{}}}};
+const catalog = {jsonrpc:'2.0',id:2,result:{tools:[{name:'convert_markdown',inputSchema:{type:'object',properties:{markdown:{type:'string'},format:{enum:['pdf','docx','html','epub']}}}}]}};
+test('recognizes production OAuth metadata without performing a grant', () => assert.doesNotThrow(() => validateMetadata(resource,auth)));
+test('refuses a discovery redirect to another issuer', () => assert.throws(() => validateMetadata(resource,{...auth,issuer:'https://example.com'}),/issuer/));
+test('refuses registration on another origin', () => assert.throws(() => validateMetadata(resource,{...auth,registration_endpoint:'https://example.com/register'}),/endpoint/));
+test('requires PKCE S256', () => assert.throws(() => validateMetadata(resource,{...auth,code_challenge_methods_supported:['plain']}),/PKCE/));
+test('does not mistake authorization-server extra scopes for MCP permissions', () => assert.doesNotThrow(() => validateMetadata(resource,{...auth,scopes_supported:['admin:*']})));
+test('refuses private resource metadata granting unrelated admin access', () => assert.throws(() => validateMetadata({...resource,scopes_supported:['admin:*']},auth),/scopes/));
+test('accepts ordinary public MCP initialize and tool discovery', () => {validateInitialize(initialized);validateTools(catalog);});
+test('refuses RPC errors as success', () => assert.throws(() => validateTools({jsonrpc:'2.0',id:2,error:{code:-32603,message:'synthetic'}}),/catalog/));
+test('refuses empty catalog as conversion availability', () => assert.throws(() => validateTools({...catalog,result:{tools:[]}}),/convert_markdown/));
+test('rejects unimplemented negotiation revision', () => assert.throws(() => validateInitialize({...initialized,result:{...initialized.result,protocolVersion:'2099-01-01'}}),/protocol/));
+test('requires all four advertised public output formats', () => assert.throws(() => validateTools({...catalog,result:{tools:[{name:'convert_markdown',inputSchema:{properties:{markdown:{type:'string'},format:{enum:['pdf']}}}}]}}),/formats/));

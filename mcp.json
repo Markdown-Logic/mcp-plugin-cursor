@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "markdown-logic": {
+      "url": "https://mcp.markdownlogic.com"
+    },
+    "markdown-logic-public": {
+      "url": "https://markdownlogic.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "markdown-logic",
+  "version": "0.1.0",
+  "description": "Convert supplied Markdown without an account, or use browser OAuth to find, read, revise and render authorized Markdown Logic project documents. Skills add workflow guidance; account permissions and plan limits apply.",
+  "author": {
+    "name": "Lemuridae Labs"
+  },
+  "homepage": "https://markdownlogic.com/",
+  "repository": "https://github.com/Markdown-Logic/mcp-plugin-cursor",
+  "keywords": [
+    "markdown",
+    "documents",
+    "pdf",
+    "mcp",
+    "markdown-logic"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": "skills/",
+  "mcpServers": "mcp.json"
+}

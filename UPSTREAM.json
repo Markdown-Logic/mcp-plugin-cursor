@@ -1,0 +1,105 @@
+{
+  "repository": "https://github.com/Markdown-Logic/mcp-plugin-claude",
+  "commit": "34f800630b7f8d4bbb4385ce2490052862d5c4b5",
+  "license": "MIT",
+  "files": {
+    "skills/convert-render/SKILL.md": {
+      "source": "claude-main/skills/convert-render/SKILL.md",
+      "upstreamSha256": "711346ebf7b4974c7be76893d4d2b9615f933e4fc4e77d0c4cea422d521cac74",
+      "change": "Correct anonymous MCP versus browser challenge distinction to match current public help and live service.",
+      "sha256": "20babc9b74bd257209ff785f20c6814bd0b47d6408069abc9acbf20fec1932dd"
+    },
+    "skills/convert-render/references/ordinary-documents.md": {
+      "source": "claude-main/skills/convert-render/references/ordinary-documents.md",
+      "upstreamSha256": "22f8d7842ec5b5fd1e2678a64910c352440c594daf72454d5335dabf6a5b3220",
+      "sha256": "22f8d7842ec5b5fd1e2678a64910c352440c594daf72454d5335dabf6a5b3220"
+    },
+    "skills/integration-troubleshooting/SKILL.md": {
+      "source": "claude-main/skills/integration-troubleshooting/SKILL.md",
+      "upstreamSha256": "1752a04a0d3f4f656eea21d9adb6592a9bdedc50ee4af60a01f2e139e773b89c",
+      "sha256": "1752a04a0d3f4f656eea21d9adb6592a9bdedc50ee4af60a01f2e139e773b89c"
+    },
+    "skills/integration-troubleshooting/references/protocol-profiles.md": {
+      "source": "claude-main/skills/integration-troubleshooting/references/protocol-profiles.md",
+      "upstreamSha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a",
+      "sha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a"
+    },
+    "skills/project-artifacts/SKILL.md": {
+      "source": "claude-main/skills/project-artifacts/SKILL.md",
+      "upstreamSha256": "545eb3a1eef7549c731eb41c66494fc55f3a75d4bcfce4e3e6a0eb946586cc0e",
+      "sha256": "545eb3a1eef7549c731eb41c66494fc55f3a75d4bcfce4e3e6a0eb946586cc0e"
+    },
+    "skills/project-artifacts/references/actions.md": {
+      "source": "claude-main/skills/project-artifacts/references/actions.md",
+      "upstreamSha256": "797f637d5478fd3221cdbb446e4bb34750c2f84a288851333cacfaac45588ff0",
+      "sha256": "797f637d5478fd3221cdbb446e4bb34750c2f84a288851333cacfaac45588ff0"
+    },
+    "skills/project-artifacts/references/properties.md": {
+      "source": "claude-main/skills/project-artifacts/references/properties.md",
+      "upstreamSha256": "1e414e64497d0e40571dd4b2cd45149e2448e7685051cb2e703ec9f400550012",
+      "sha256": "1e414e64497d0e40571dd4b2cd45149e2448e7685051cb2e703ec9f400550012"
+    },
+    "skills/repository-endpoint-sources/SKILL.md": {
+      "source": "claude-main/skills/repository-endpoint-sources/SKILL.md",
+      "upstreamSha256": "3cdfacb20279fa6d478c041ffb596afeda08c372726a3bb1174ce239c7beeaa7",
+      "sha256": "3cdfacb20279fa6d478c041ffb596afeda08c372726a3bb1174ce239c7beeaa7"
+    },
+    "skills/repository-endpoint-sources/references/evidence.md": {
+      "source": "claude-main/skills/repository-endpoint-sources/references/evidence.md",
+      "upstreamSha256": "1ab00cdad6ccfb572162e0f34f6859b971f80023f832c55199e20280c38ff6bc",
+      "sha256": "1ab00cdad6ccfb572162e0f34f6859b971f80023f832c55199e20280c38ff6bc"
+    },
+    "skills/structured-analysis/SKILL.md": {
+      "source": "claude-main/skills/structured-analysis/SKILL.md",
+      "upstreamSha256": "cb4886426943b0bcb19057686339c4e79b3020455070df18d565fc8eb4c999d3",
+      "sha256": "cb4886426943b0bcb19057686339c4e79b3020455070df18d565fc8eb4c999d3"
+    },
+    "skills/structured-analysis/references/comparison.md": {
+      "source": "claude-main/skills/structured-analysis/references/comparison.md",
+      "upstreamSha256": "a723eb614e09c23a84546fcd8444da1b43e83e5f3ffd8a6e9f70da8d6a53b80e",
+      "sha256": "a723eb614e09c23a84546fcd8444da1b43e83e5f3ffd8a6e9f70da8d6a53b80e"
+    },
+    "skills/structured-analysis/references/openapi.md": {
+      "source": "claude-main/skills/structured-analysis/references/openapi.md",
+      "upstreamSha256": "32ab0fc3aafe4127926fd5fcb2099d4db3e4d51500c5a0b7c660603855122b72",
+      "sha256": "32ab0fc3aafe4127926fd5fcb2099d4db3e4d51500c5a0b7c660603855122b72"
+    },
+    "skills/structured-analysis/references/sarif.md": {
+      "source": "claude-main/skills/structured-analysis/references/sarif.md",
+      "upstreamSha256": "b7e7319cf575bb008b09187b40d930dd1eed95b1420fee5b750bf54e452b64aa",
+      "sha256": "b7e7319cf575bb008b09187b40d930dd1eed95b1420fee5b750bf54e452b64aa"
+    },
+    "skills/structured-analysis/references/sbom.md": {
+      "source": "claude-main/skills/structured-analysis/references/sbom.md",
+      "upstreamSha256": "d9138036e9c7bbc90fe1db1fe47cd2c61fcf95db74b307d86d95ee02ac838f89",
+      "sha256": "d9138036e9c7bbc90fe1db1fe47cd2c61fcf95db74b307d86d95ee02ac838f89"
+    },
+    "skills/structured-analysis/references/vex-csaf.md": {
+      "source": "claude-main/skills/structured-analysis/references/vex-csaf.md",
+      "upstreamSha256": "e831d4c3ff018a81819bf5c5e327d730369ce57ee578dae083d7c94bf7aa7d7f",
+      "sha256": "e831d4c3ff018a81819bf5c5e327d730369ce57ee578dae083d7c94bf7aa7d7f"
+    },
+    "skills/public-conversion-help/SKILL.md": {
+      "source": "claude-public/skills/public-conversion-help/SKILL.md",
+      "upstreamSha256": "133f74df6228f36b1e9362d978bf57f189e0f350ade206abca986a91391f3f45",
+      "sha256": "c7caa73976592ab04c1e3df5963256a38c01424267b3d992ebd0a3ed0592eb51",
+      "change": "Use packaged sibling reference instead of requiring remote skills/list support in Cursor."
+    },
+    "skills/public-markdown-conversion/SKILL.md": {
+      "source": "claude-public/skills/public-markdown-conversion/SKILL.md",
+      "upstreamSha256": "69a450b16b2c481e21f0eeb71daf12b478538d4a104783930345013391e63a75",
+      "sha256": "69a450b16b2c481e21f0eeb71daf12b478538d4a104783930345013391e63a75"
+    },
+    "skills/public-markdown-conversion/references/conversion.md": {
+      "source": "claude-public/skills/public-markdown-conversion/references/conversion.md",
+      "upstreamSha256": "07fd0d57ed4f38a4883898b3a84bfec7c263a35fdd5abd50f39f1daba376114c",
+      "sha256": "07fd0d57ed4f38a4883898b3a84bfec7c263a35fdd5abd50f39f1daba376114c"
+    },
+    "assets/logo.svg": {
+      "sourceUrl": "https://markdownlogic.com/images/brand.svg",
+      "upstreamSha256": "50f37e44a24e2fdb56b048456feee5227afe2bb621464edaf1850d67424e0f07",
+      "sha256": "25813fd3497b7a6b0280a470a672ecc6d9609e5b3f413ebcd02431e7afa5efa2",
+      "change": "Current public brand geometry, unchanged colors, centered on a square white plate for Cursor marketplace requirement. Retrieved 2026-11-02."
+    }
+  }
+}
