@@ -2,13 +2,15 @@
 
 Record the package commit, Cursor version, OS, selected connection, safe request IDs and result.
 
+**Observed callback blocker:** installed Cursor 3.19.7 sends `cursor://anysphere.cursor-mcp/oauth/callback`, which the authorization server rejects before consent. Retest using a supported callback; no grant was approved.
+
 **Open OAuth question:** the authorization server advertises additional scopes beyond the four MCP resource scopes. Cursor documents defaults based on authorization-server discovery when explicit scopes are absent. The package uses dynamic registration, while the documented static `auth.scopes` example requires a client ID. Verify actual Cursor scope selection before authorizing; do not invent an undocumented scopes-only configuration or create a shared client just to bypass this check. Exclude tokens, credentials, private source and full authorization URLs.
 
 - [ ] Package source license selected by owner; notice and manifest agree.
 - [ ] `npm run validate:release` and `npm test` pass for the exact commit.
 - [ ] Public repository contains only reviewed integration files and public upstream assets.
-- [ ] Copy plugin to a new `~/.cursor/plugins/local/markdown-logic/` directory without overwriting another installation. External symlinks are unsupported.
-- [ ] Confirm `.cursor-plugin/plugin.json`, both server connections and seven skills load in Cursor Customize. Check same-name marketplace overrides.
+- [x] Copy plugin to a new `~/.cursor/plugins/local/markdown-logic/` directory without overwriting another installation. External symlinks are unsupported.
+- [x] Confirm `.cursor-plugin/plugin.json`, both server connections and seven skills load in Cursor Customize. See the [dated local validation record](local-validation.md); public discovery connected, while private registration failed on this installed build. The temporary installation was removed afterward.
 - [ ] With only public conversion enabled, catalog advertises `convert_markdown` without authentication. With the user's authorization, convert benign complete Markdown and save/open the returned bytes. Record format, size and hash; do not claim a hosted download.
 - [ ] For private access, review Cursor's browser consent with the owner. The resource advertises `documents:read`, `documents:write`, `projects:read`, `releases:read`; do not grant unrelated admin, notification or key-management scopes just to test this package. Choose the smallest access appropriate to the task.
 - [ ] With explicit authorization for the grant, complete OAuth in Cursor. The desktop callback is `http://localhost:8787/callback`; web/agent handoff can use `https://www.cursor.com/agents/mcp/oauth/callback`. Discovery alone does not prove these callbacks are accepted by a particular registration.

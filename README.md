@@ -17,7 +17,7 @@ Open Cursor settings → **Customize**, confirm the plugin and its skills appear
 
 For private documents, initiate sign-in from the private MCP connection. Review the browser's requested permissions before authorizing it. **OAuth acceptance is pending:** Cursor documents that omitted scopes can default to the authorization server's advertised scopes, which include unrelated permissions. Verify Cursor narrows the request to the four MCP resource scopes before approving consent; do not accept an unrelated permission to make this plugin work. The server advertises OAuth discovery, authorization code with PKCE S256, and dynamic registration; no shared client ID or secret is embedded here. Do not paste an API key or a web-session token into this repository. Review/revoke authorized connections from **Applications** in the Markdown Logic account menu.
 
-Cursor uses browser OAuth callbacks that may differ between desktop and web. This repository does not pre-register clients or change callback allowlists. Successful metadata checks do not prove Cursor's complete sign-in flow. Follow the [acceptance checklist](docs/cursor-acceptance.md) before marketplace submission.
+Cursor uses browser OAuth callbacks that may differ between desktop and web. This repository does not pre-register clients or change callback allowlists. Successful metadata checks do not prove Cursor's complete sign-in flow. The [local validation record](docs/local-validation.md) confirms loading and public discovery, and records a private OAuth callback refusal in installed Cursor 3.19.7. Follow the [acceptance checklist](docs/cursor-acceptance.md) before marketplace submission.
 
 ## Try it
 
