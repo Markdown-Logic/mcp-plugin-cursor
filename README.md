@@ -61,7 +61,7 @@ The first three commands run locally without network access. `validate:release` 
 
 ## Source license
 
-The license for the new Cursor integration files is awaiting the owner’s choice. Imported skills retain their upstream MIT notice regardless of that choice. This preparation snapshot is not publication-ready until the package license is selected.
+The integration files are licensed under [MIT](LICENSE), with the limits in [License scope and notices](LICENSE-SCOPE.md). Imported skills retain their upstream MIT notice and source attribution. The remote Markdown Logic service and product trademarks are separate.
 
 ## Publication status
 

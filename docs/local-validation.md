@@ -23,4 +23,4 @@ No conversion, private document read/write, account sign-in, consent approval or
 
 After inspection, the test copy was verified byte-for-byte unchanged and removed. Cursor returned to its empty local-plugin inventory. The source clone, existing user MCP configurations and other plugin components were preserved.
 
-Next acceptance steps: use a compatible Cursor callback, review the exact requested MCP scopes before any owner-approved grant, then test a user-selected read and separately authorize a benign public conversion/file-save check. Package source licensing remains a separate publication gate.
+Next acceptance steps: use a compatible Cursor callback, review the exact requested MCP scopes before any owner-approved grant, then test a user-selected read and separately authorize a benign public conversion/file-save check. At the time of this initial check the package license choice was pending; the current LICENSE and manifest record the owner’s subsequent MIT selection.

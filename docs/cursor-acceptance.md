@@ -6,7 +6,7 @@ Record the package commit, Cursor version, OS, selected connection, safe request
 
 **Open OAuth question:** the authorization server advertises additional scopes beyond the four MCP resource scopes. Cursor documents defaults based on authorization-server discovery when explicit scopes are absent. The package uses dynamic registration, while the documented static `auth.scopes` example requires a client ID. Verify actual Cursor scope selection before authorizing; do not invent an undocumented scopes-only configuration or create a shared client just to bypass this check. Exclude tokens, credentials, private source and full authorization URLs.
 
-- [ ] Package source license selected by owner; notice and manifest agree.
+- [x] Package source license selected by owner: MIT. Root notice, package metadata and plugin manifest agree.
 - [ ] `npm run validate:release` and `npm test` pass for the exact commit.
 - [ ] Public repository contains only reviewed integration files and public upstream assets.
 - [x] Copy plugin to a new `~/.cursor/plugins/local/markdown-logic/` directory without overwriting another installation. External symlinks are unsupported.
