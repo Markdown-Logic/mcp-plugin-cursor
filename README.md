@@ -67,4 +67,4 @@ The integration files are licensed under [MIT](LICENSE), with the limits in [Lic
 
 Package implementation and synthetic tests are separate from real Cursor installation, browser OAuth, file-saving acceptance and manual marketplace review. Complete those checks before submitting this public repository at [Cursor's publishing page](https://cursor.com/marketplace/publish). Publication is not automated by this repository.
 
-Version 0.3.1 is prepared and unpublished. See [current qualification](RELEASE-0.3.1.md). The Claude upstream source commit is recorded in UPSTREAM.json; GitHub availability does not establish marketplace approval. Historical acceptance records apply to their original artifacts.
+Version 0.3.2 is prepared and unpublished. See [current qualification](RELEASE-0.3.2.md). The Claude upstream source commit is recorded in UPSTREAM.json; GitHub availability does not establish marketplace approval. Historical acceptance records apply to their original artifacts.
