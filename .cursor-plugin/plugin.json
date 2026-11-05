@@ -1,7 +1,7 @@
 {
   "name": "markdown-logic",
-  "version": "0.3.2",
-  "description": "Convert Markdown without an account, or connect to manage, display and share team documents with your AI assistant. Export to PDF, DOCX and more. Explore app.markdownlogic.com.",
+  "version": "0.3.3",
+  "description": "Manage, convert and display Markdown files with your AI assistant. Generate new documents, coordinate between team members and agents, and generate share links for others. Use built-in templates and rendering styles for professional documents in PDF, DOCX, and more. Explore the system at https://app.markdownlogic.com/. Anonymous conversion is also available without an account.",
   "author": {
     "name": "Markdown Logic"
   },

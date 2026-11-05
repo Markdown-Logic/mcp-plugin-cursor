@@ -1,6 +1,6 @@
 {
   "name": "markdown-logic-cursor-plugin",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": true,
   "type": "module",
   "description": "Local validation for the Markdown Logic Cursor plugin; no npm distribution or runtime dependencies.",

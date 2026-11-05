@@ -1,13 +1,13 @@
 {
   "repository": "https://github.com/Markdown-Logic/mcp-plugin-claude",
-  "commit": "cc359bcce34c413b467d543f3bf81315c5b35119",
-  "baselineCommit": "163bd674c10d82d1c96b01ca8803085969b8eb7a",
+  "commit": "4abad8b20dda861af84ad9c36ae04b3f0ec1b3b4",
+  "baselineCommit": "cc359bcce34c413b467d543f3bf81315c5b35119",
   "license": "MIT",
-  "sourceVersion": "0.3.2",
+  "sourceVersion": "0.3.3",
   "status": "upstream-commit-verified",
   "sourceArchives": {
-    "claude-main-0.3.2.zip": "12b61ead3d588e14c30808e3ad66e47030195d78a525b68803b91912c796a252",
-    "claude-public-0.3.2.zip": "1f0d9b9e907a839071a1ab1669827cb419637cbef515f77b402790bd2e4d6d05"
+    "claude-main-0.3.3.zip": "d415cb53de2ae4e6b8b282860a1ecb2803f7427e00f7d5c23237e5bec9cbc031",
+    "claude-public-0.3.3.zip": "3c83120866e7c70584a0d089ae44edcecdbb6fa6b4152df641b4d11db2734638"
   },
   "files": {
     "skills/structured-analysis/SKILL.md": {

@@ -21,7 +21,7 @@ function walk(path = '') {
 }
 try {
   const files = walk();
-  const allowed = /^(?:\.cursor-plugin\/plugin\.json|\.github\/workflows\/validate\.yml|\.gitignore|mcp\.json|package\.json|(?:README|LICENSE|LICENSE-SCOPE|THIRD_PARTY_NOTICES|CONTRIBUTING)\.md|RELEASE-0\.3\.(?:1|2)\.md|LICENSE|UPSTREAM\.json|assets\/(?:icon|logo)\.svg|licenses\/upstream-skills-MIT\.txt|skills\/[a-z-]+\/(?:SKILL\.md|references\/[a-z-]+\.md)|docs\/[a-z-]+\.md|tools\/[a-z-]+\.mjs|tests\/[a-z-]+\.test\.mjs)$/;
+  const allowed = /^(?:\.cursor-plugin\/plugin\.json|\.github\/workflows\/validate\.yml|\.gitignore|mcp\.json|package\.json|(?:README|LICENSE|LICENSE-SCOPE|THIRD_PARTY_NOTICES|CONTRIBUTING)\.md|RELEASE-0\.3\.(?:1|2|3)\.md|LICENSE|UPSTREAM\.json|assets\/(?:icon|logo)\.svg|licenses\/upstream-skills-MIT\.txt|skills\/[a-z-]+\/(?:SKILL\.md|references\/[a-z-]+\.md)|docs\/[a-z-]+\.md|tools\/[a-z-]+\.mjs|tests\/[a-z-]+\.test\.mjs)$/;
   for (const file of files) requireThat(allowed.test(file), `Unexpected file in publication tree: ${file}`);
   const manifest = JSON.parse(read('.cursor-plugin/plugin.json'));
   const fields = new Set(['name','version','description','author','homepage','repository','license','keywords','logo','skills','mcpServers']);

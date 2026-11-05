@@ -10,7 +10,7 @@ const run = (dir, args = []) => spawnSync(process.execPath, [join(root, 'tools/v
 function fixture(change, args = []) {
   const dir = mkdtempSync(join(tmpdir(), 'mdl-cursor-test-'));
   try {
-    for (const name of ['.cursor-plugin', 'mcp.json', 'skills', 'assets', 'README.md', 'UPSTREAM.json', 'THIRD_PARTY_NOTICES.md', 'docs', 'CONTRIBUTING.md', 'licenses', 'LICENSE', 'LICENSE-SCOPE.md','RELEASE-0.3.1.md','RELEASE-0.3.2.md']) {
+    for (const name of ['.cursor-plugin', 'mcp.json', 'skills', 'assets', 'README.md', 'UPSTREAM.json', 'THIRD_PARTY_NOTICES.md', 'docs', 'CONTRIBUTING.md', 'licenses', 'LICENSE', 'LICENSE-SCOPE.md','RELEASE-0.3.1.md','RELEASE-0.3.2.md','RELEASE-0.3.3.md']) {
       cpSync(join(root, name), join(dir, name), { recursive: true });
     }
     if (args.includes('--release')) changeJSON(dir, 'UPSTREAM.json', u => { u.commit = '1'.repeat(40); }); // Synthetic pinned fixture for license tests.
