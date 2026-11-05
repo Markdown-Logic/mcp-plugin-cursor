@@ -1,6 +1,6 @@
 {
   "name": "markdown-logic",
-  "version": "0.1.0",
+  "version": "0.3.1",
   "description": "Convert supplied Markdown without an account, or use browser OAuth to find, read, revise and render authorized Markdown Logic project documents. Skills add workflow guidance; account permissions and plan limits apply.",
   "author": {
     "name": "Lemuridae Labs"

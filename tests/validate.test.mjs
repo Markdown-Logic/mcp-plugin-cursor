@@ -10,9 +10,10 @@ const run = (dir, args = []) => spawnSync(process.execPath, [join(root, 'tools/v
 function fixture(change, args = []) {
   const dir = mkdtempSync(join(tmpdir(), 'mdl-cursor-test-'));
   try {
-    for (const name of ['.cursor-plugin', 'mcp.json', 'skills', 'assets', 'README.md', 'UPSTREAM.json', 'THIRD_PARTY_NOTICES.md', 'docs', 'CONTRIBUTING.md', 'licenses', 'LICENSE', 'LICENSE-SCOPE.md']) {
+    for (const name of ['.cursor-plugin', 'mcp.json', 'skills', 'assets', 'README.md', 'UPSTREAM.json', 'THIRD_PARTY_NOTICES.md', 'docs', 'CONTRIBUTING.md', 'licenses', 'LICENSE', 'LICENSE-SCOPE.md','RELEASE-0.3.1.md']) {
       cpSync(join(root, name), join(dir, name), { recursive: true });
     }
+    if (args.includes('--release')) changeJSON(dir, 'UPSTREAM.json', u => { u.commit = '1'.repeat(40); }); // Synthetic pinned fixture for license tests.
     change(dir);
     return run(dir, args);
   } finally { rmSync(dir, { recursive: true, force: true }); }
@@ -49,3 +50,5 @@ test('release validation refuses an unlicensed package', () => refused(fixture(d
 test('release validation accepts an explicit license and retained notice', () => { const result=fixture(d => { changeJSON(d, '.cursor-plugin/plugin.json', m => m.license='MIT'); cpSync(join(d,'licenses/upstream-skills-MIT.txt'),join(d,'LICENSE')); }, ['--release']); assert.equal(result.status,0,result.stderr); });
 
 test('rejects missing upstream MIT license notice', () => refused(fixture(d => rmSync(join(d,'licenses/upstream-skills-MIT.txt'))), /missing/));
+
+test('unpublished preparation refuses release validation', () => refused(fixture(d => changeJSON(d, 'UPSTREAM.json', u => { u.commit = null; u.status = 'prepared-unpublished'; }), ['--release']), /provenance/));

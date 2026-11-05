@@ -1,89 +1,170 @@
 {
   "repository": "https://github.com/Markdown-Logic/mcp-plugin-claude",
-  "commit": "34f800630b7f8d4bbb4385ce2490052862d5c4b5",
+  "commit": "163bd674c10d82d1c96b01ca8803085969b8eb7a",
+  "baselineCommit": "34f800630b7f8d4bbb4385ce2490052862d5c4b5",
   "license": "MIT",
+  "sourceVersion": "0.3.1",
+  "status": "upstream-commit-verified",
+  "sourceArchives": {
+    "claude-main-0.3.1.zip": "7db03de7b5f24aed26ae8ea6bdcd2bd1db73b781a61ce7491c8fc8bb5dac552c",
+    "claude-public-0.3.1.zip": "187a47c850534ec4785da52a9d1537b42bfb19f6d9624497aea8bcb93a7e6b4c"
+  },
   "files": {
+    "skills/structured-analysis/SKILL.md": {
+      "source": "claude-main/skills/structured-analysis/SKILL.md",
+      "upstreamSha256": "93ed6903bc7f29a76af97a23d74464caf9984d8f030c302156666650733fa2e4",
+      "sha256": "93ed6903bc7f29a76af97a23d74464caf9984d8f030c302156666650733fa2e4"
+    },
+    "skills/api-integration-planner/SKILL.md": {
+      "source": "claude-main/skills/api-integration-planner/SKILL.md",
+      "upstreamSha256": "1b2f6a12a912329fa5e84f64a571e8272f86747e2f830be0eab1be4ed271ff2e",
+      "sha256": "1b2f6a12a912329fa5e84f64a571e8272f86747e2f830be0eab1be4ed271ff2e"
+    },
+    "skills/project-artifacts/SKILL.md": {
+      "source": "claude-main/skills/project-artifacts/SKILL.md",
+      "upstreamSha256": "67892d1a4e6f34b1b9ab2ab304ca409a439a3f583202764ac624915cc547b9d7",
+      "sha256": "67892d1a4e6f34b1b9ab2ab304ca409a439a3f583202764ac624915cc547b9d7"
+    },
     "skills/convert-render/SKILL.md": {
       "source": "claude-main/skills/convert-render/SKILL.md",
-      "upstreamSha256": "711346ebf7b4974c7be76893d4d2b9615f933e4fc4e77d0c4cea422d521cac74",
-      "change": "Correct anonymous MCP versus browser challenge distinction to match current public help and live service.",
-      "sha256": "20babc9b74bd257209ff785f20c6814bd0b47d6408069abc9acbf20fec1932dd"
+      "upstreamSha256": "5b2fabf5cb847ba622e80dea9db3e48121e94ad4789e8cbea6e4abff617fac24",
+      "sha256": "a237aa24e0fa9012fab2fb195103cd3b3e1452921d12b2dd64ba12eeba305756",
+      "change": "Preserve Cursor combined-package anonymous MCP versus browser challenge distinction."
+    },
+    "skills/research-projects/SKILL.md": {
+      "source": "claude-main/skills/research-projects/SKILL.md",
+      "upstreamSha256": "830a555db085f68ec4e4ff2faf1bdc2ee07acf079eff22630d305662a0635a41",
+      "sha256": "830a555db085f68ec4e4ff2faf1bdc2ee07acf079eff22630d305662a0635a41"
+    },
+    "skills/research-projects/references/protocol-profiles.md": {
+      "source": "claude-main/skills/research-projects/references/protocol-profiles.md",
+      "upstreamSha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a",
+      "sha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a"
+    },
+    "skills/research-projects/references/briefings.md": {
+      "source": "claude-main/skills/research-projects/references/briefings.md",
+      "upstreamSha256": "6cf808a51e2508ce5e9c3d26e628e1d6bff8cc02cf115076dd5c73fe9aebc8f2",
+      "sha256": "6cf808a51e2508ce5e9c3d26e628e1d6bff8cc02cf115076dd5c73fe9aebc8f2"
+    },
+    "skills/research-projects/references/evidence.md": {
+      "source": "claude-main/skills/research-projects/references/evidence.md",
+      "upstreamSha256": "99c34cfe525239c45f18081dde32dd7a98b0090bcc7fad947f988b2876cfccf6",
+      "sha256": "99c34cfe525239c45f18081dde32dd7a98b0090bcc7fad947f988b2876cfccf6"
+    },
+    "skills/research-projects/references/connection-recovery.md": {
+      "source": "claude-main/skills/research-projects/references/connection-recovery.md",
+      "upstreamSha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3",
+      "sha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3"
+    },
+    "skills/research-projects/references/source-reading.md": {
+      "source": "claude-main/skills/research-projects/references/source-reading.md",
+      "upstreamSha256": "d70ebbc4220185f8c7e3f902619814faa74410fabdb9feb83a0d35754be62dca",
+      "sha256": "d70ebbc4220185f8c7e3f902619814faa74410fabdb9feb83a0d35754be62dca"
+    },
+    "skills/convert-render/references/protocol-profiles.md": {
+      "source": "claude-main/skills/convert-render/references/protocol-profiles.md",
+      "upstreamSha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a",
+      "sha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a"
     },
     "skills/convert-render/references/ordinary-documents.md": {
       "source": "claude-main/skills/convert-render/references/ordinary-documents.md",
       "upstreamSha256": "22f8d7842ec5b5fd1e2678a64910c352440c594daf72454d5335dabf6a5b3220",
       "sha256": "22f8d7842ec5b5fd1e2678a64910c352440c594daf72454d5335dabf6a5b3220"
     },
-    "skills/integration-troubleshooting/SKILL.md": {
-      "source": "claude-main/skills/integration-troubleshooting/SKILL.md",
-      "upstreamSha256": "1752a04a0d3f4f656eea21d9adb6592a9bdedc50ee4af60a01f2e139e773b89c",
-      "sha256": "1752a04a0d3f4f656eea21d9adb6592a9bdedc50ee4af60a01f2e139e773b89c"
+    "skills/convert-render/references/connection-recovery.md": {
+      "source": "claude-main/skills/convert-render/references/connection-recovery.md",
+      "upstreamSha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3",
+      "sha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3"
     },
-    "skills/integration-troubleshooting/references/protocol-profiles.md": {
-      "source": "claude-main/skills/integration-troubleshooting/references/protocol-profiles.md",
+    "skills/project-artifacts/references/protocol-profiles.md": {
+      "source": "claude-main/skills/project-artifacts/references/protocol-profiles.md",
       "upstreamSha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a",
       "sha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a"
-    },
-    "skills/project-artifacts/SKILL.md": {
-      "source": "claude-main/skills/project-artifacts/SKILL.md",
-      "upstreamSha256": "545eb3a1eef7549c731eb41c66494fc55f3a75d4bcfce4e3e6a0eb946586cc0e",
-      "sha256": "545eb3a1eef7549c731eb41c66494fc55f3a75d4bcfce4e3e6a0eb946586cc0e"
-    },
-    "skills/project-artifacts/references/actions.md": {
-      "source": "claude-main/skills/project-artifacts/references/actions.md",
-      "upstreamSha256": "797f637d5478fd3221cdbb446e4bb34750c2f84a288851333cacfaac45588ff0",
-      "sha256": "797f637d5478fd3221cdbb446e4bb34750c2f84a288851333cacfaac45588ff0"
     },
     "skills/project-artifacts/references/properties.md": {
       "source": "claude-main/skills/project-artifacts/references/properties.md",
       "upstreamSha256": "1e414e64497d0e40571dd4b2cd45149e2448e7685051cb2e703ec9f400550012",
       "sha256": "1e414e64497d0e40571dd4b2cd45149e2448e7685051cb2e703ec9f400550012"
     },
-    "skills/repository-endpoint-sources/SKILL.md": {
-      "source": "claude-main/skills/repository-endpoint-sources/SKILL.md",
-      "upstreamSha256": "3cdfacb20279fa6d478c041ffb596afeda08c372726a3bb1174ce239c7beeaa7",
-      "sha256": "3cdfacb20279fa6d478c041ffb596afeda08c372726a3bb1174ce239c7beeaa7"
+    "skills/project-artifacts/references/actions.md": {
+      "source": "claude-main/skills/project-artifacts/references/actions.md",
+      "upstreamSha256": "8d2df87533eb604331c6eeebf599d91d741e441b1fcc99c3c373e05cce4f3752",
+      "sha256": "8d2df87533eb604331c6eeebf599d91d741e441b1fcc99c3c373e05cce4f3752"
     },
-    "skills/repository-endpoint-sources/references/evidence.md": {
-      "source": "claude-main/skills/repository-endpoint-sources/references/evidence.md",
-      "upstreamSha256": "1ab00cdad6ccfb572162e0f34f6859b971f80023f832c55199e20280c38ff6bc",
-      "sha256": "1ab00cdad6ccfb572162e0f34f6859b971f80023f832c55199e20280c38ff6bc"
+    "skills/project-artifacts/references/connection-recovery.md": {
+      "source": "claude-main/skills/project-artifacts/references/connection-recovery.md",
+      "upstreamSha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3",
+      "sha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3"
     },
-    "skills/structured-analysis/SKILL.md": {
-      "source": "claude-main/skills/structured-analysis/SKILL.md",
-      "upstreamSha256": "cb4886426943b0bcb19057686339c4e79b3020455070df18d565fc8eb4c999d3",
-      "sha256": "cb4886426943b0bcb19057686339c4e79b3020455070df18d565fc8eb4c999d3"
+    "skills/api-integration-planner/references/protocol-profiles.md": {
+      "source": "claude-main/skills/api-integration-planner/references/protocol-profiles.md",
+      "upstreamSha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a",
+      "sha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a"
     },
-    "skills/structured-analysis/references/comparison.md": {
-      "source": "claude-main/skills/structured-analysis/references/comparison.md",
-      "upstreamSha256": "a723eb614e09c23a84546fcd8444da1b43e83e5f3ffd8a6e9f70da8d6a53b80e",
-      "sha256": "a723eb614e09c23a84546fcd8444da1b43e83e5f3ffd8a6e9f70da8d6a53b80e"
+    "skills/api-integration-planner/references/contracts.md": {
+      "source": "claude-main/skills/api-integration-planner/references/contracts.md",
+      "upstreamSha256": "928cfebbb55603c2dba89eabd688f7e460c9421431a6d24c5ec8831c0e81fafe",
+      "sha256": "928cfebbb55603c2dba89eabd688f7e460c9421431a6d24c5ec8831c0e81fafe"
     },
-    "skills/structured-analysis/references/openapi.md": {
-      "source": "claude-main/skills/structured-analysis/references/openapi.md",
-      "upstreamSha256": "32ab0fc3aafe4127926fd5fcb2099d4db3e4d51500c5a0b7c660603855122b72",
-      "sha256": "32ab0fc3aafe4127926fd5fcb2099d4db3e4d51500c5a0b7c660603855122b72"
+    "skills/api-integration-planner/references/evidence.md": {
+      "source": "claude-main/skills/api-integration-planner/references/evidence.md",
+      "upstreamSha256": "99c34cfe525239c45f18081dde32dd7a98b0090bcc7fad947f988b2876cfccf6",
+      "sha256": "99c34cfe525239c45f18081dde32dd7a98b0090bcc7fad947f988b2876cfccf6"
     },
-    "skills/structured-analysis/references/sarif.md": {
-      "source": "claude-main/skills/structured-analysis/references/sarif.md",
-      "upstreamSha256": "b7e7319cf575bb008b09187b40d930dd1eed95b1420fee5b750bf54e452b64aa",
-      "sha256": "b7e7319cf575bb008b09187b40d930dd1eed95b1420fee5b750bf54e452b64aa"
+    "skills/api-integration-planner/references/validation.md": {
+      "source": "claude-main/skills/api-integration-planner/references/validation.md",
+      "upstreamSha256": "fddfd2262c01db85697bd9c5157b516ff62730a701830212ca70383b5600e864",
+      "sha256": "fddfd2262c01db85697bd9c5157b516ff62730a701830212ca70383b5600e864"
+    },
+    "skills/api-integration-planner/references/connection-recovery.md": {
+      "source": "claude-main/skills/api-integration-planner/references/connection-recovery.md",
+      "upstreamSha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3",
+      "sha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3"
+    },
+    "skills/api-integration-planner/references/source-reading.md": {
+      "source": "claude-main/skills/api-integration-planner/references/source-reading.md",
+      "upstreamSha256": "d70ebbc4220185f8c7e3f902619814faa74410fabdb9feb83a0d35754be62dca",
+      "sha256": "d70ebbc4220185f8c7e3f902619814faa74410fabdb9feb83a0d35754be62dca"
+    },
+    "skills/structured-analysis/references/protocol-profiles.md": {
+      "source": "claude-main/skills/structured-analysis/references/protocol-profiles.md",
+      "upstreamSha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a",
+      "sha256": "6725b0fbc49579fea74739e388ac977ed51f82cf2a74af5e5d127228ec703e7a"
+    },
+    "skills/structured-analysis/references/vex-csaf.md": {
+      "source": "claude-main/skills/structured-analysis/references/vex-csaf.md",
+      "upstreamSha256": "e00f0761959c8b906bf8f542e224ba3175e704fbfcd0cd0766a9ebb40049747a",
+      "sha256": "e00f0761959c8b906bf8f542e224ba3175e704fbfcd0cd0766a9ebb40049747a"
     },
     "skills/structured-analysis/references/sbom.md": {
       "source": "claude-main/skills/structured-analysis/references/sbom.md",
       "upstreamSha256": "d9138036e9c7bbc90fe1db1fe47cd2c61fcf95db74b307d86d95ee02ac838f89",
       "sha256": "d9138036e9c7bbc90fe1db1fe47cd2c61fcf95db74b307d86d95ee02ac838f89"
     },
-    "skills/structured-analysis/references/vex-csaf.md": {
-      "source": "claude-main/skills/structured-analysis/references/vex-csaf.md",
-      "upstreamSha256": "e831d4c3ff018a81819bf5c5e327d730369ce57ee578dae083d7c94bf7aa7d7f",
-      "sha256": "e831d4c3ff018a81819bf5c5e327d730369ce57ee578dae083d7c94bf7aa7d7f"
+    "skills/structured-analysis/references/comparison.md": {
+      "source": "claude-main/skills/structured-analysis/references/comparison.md",
+      "upstreamSha256": "fdf236b4d5e5c10ed8da750b515c00df02ff12608cc5a3624ea667e901d3b16a",
+      "sha256": "fdf236b4d5e5c10ed8da750b515c00df02ff12608cc5a3624ea667e901d3b16a"
+    },
+    "skills/structured-analysis/references/sarif.md": {
+      "source": "claude-main/skills/structured-analysis/references/sarif.md",
+      "upstreamSha256": "b7e7319cf575bb008b09187b40d930dd1eed95b1420fee5b750bf54e452b64aa",
+      "sha256": "b7e7319cf575bb008b09187b40d930dd1eed95b1420fee5b750bf54e452b64aa"
+    },
+    "skills/structured-analysis/references/connection-recovery.md": {
+      "source": "claude-main/skills/structured-analysis/references/connection-recovery.md",
+      "upstreamSha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3",
+      "sha256": "dc90ac9c1a0d84c115acba34e26b9895d14888e2730f4063d300090c720a26a3"
+    },
+    "skills/structured-analysis/references/openapi.md": {
+      "source": "claude-main/skills/structured-analysis/references/openapi.md",
+      "upstreamSha256": "32ab0fc3aafe4127926fd5fcb2099d4db3e4d51500c5a0b7c660603855122b72",
+      "sha256": "32ab0fc3aafe4127926fd5fcb2099d4db3e4d51500c5a0b7c660603855122b72"
     },
     "skills/public-conversion-help/SKILL.md": {
       "source": "claude-public/skills/public-conversion-help/SKILL.md",
       "upstreamSha256": "133f74df6228f36b1e9362d978bf57f189e0f350ade206abca986a91391f3f45",
-      "sha256": "c7caa73976592ab04c1e3df5963256a38c01424267b3d992ebd0a3ed0592eb51",
-      "change": "Use packaged sibling reference instead of requiring remote skills/list support in Cursor."
+      "sha256": "133f74df6228f36b1e9362d978bf57f189e0f350ade206abca986a91391f3f45"
     },
     "skills/public-markdown-conversion/SKILL.md": {
       "source": "claude-public/skills/public-markdown-conversion/SKILL.md",

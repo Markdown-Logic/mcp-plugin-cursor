@@ -10,7 +10,7 @@ metadata:
 
 # Public conversion help
 
-Identify the public endpoint, requested format, client/transport, advertised tools, and safe HTTP/tool-error code. Do not collect challenge tokens, authorization headers, private source text, or credentials as diagnostic evidence. For detailed size/output/admission controls, read the packaged [public conversion reference](../public-markdown-conversion/references/conversion.md). MCP defaults are 128 KiB Markdown, 512 KiB JSON request and 2 MiB generated file; use the live tool's schema and refusal for current bounds.
+Identify the public endpoint, requested format, client/transport, advertised tools, and safe HTTP/tool-error code. Do not collect challenge tokens, authorization headers, private source text, or credentials as diagnostic evidence. For detailed size/output/admission controls, find the public-markdown-conversion skill through skills/list and read its manifest-listed references/conversion.md resource. MCP defaults are 128 KiB Markdown, 512 KiB JSON request and 2 MiB generated file; use the live tool's schema and refusal for current bounds.
 
 The anonymous converter accepts supplied Markdown and produces PDF, DOCX, HTML, or EPUB. Help and static skills describe the service; they do not grant project, repository, import, endpoint-fetch, structured-inspection, or private-account capabilities. Use only the tools/resources actually returned by the connected public server.
 

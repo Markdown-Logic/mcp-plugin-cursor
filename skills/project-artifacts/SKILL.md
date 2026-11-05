@@ -4,7 +4,7 @@ description: Find, read, create, or revise artifacts in an authenticated Markdow
 compatibility: Requires authenticated Markdown Logic MCP access. Available tools, scopes, team membership, and project policies govern each operation.
 metadata:
   author: Markdown Logic
-  version: "0.1.3"
+  version: "0.2.0"
   audience: authenticated
 ---
 
@@ -21,3 +21,7 @@ Document mutation revisions are opaque concurrency guards. Display versions, sem
 For publication, historical restoration, or sharing tasks, load [actions and sharing](references/actions.md). Loading this skill adds no authorization, scope, or permission to perform those actions.
 
 When an authorized document advertises Properties availability, load [document properties and exact-version results](references/properties.md) before interpreting or editing notes, reviews, or extracted values. An inactive or disabled document does not have an empty property map; report the unavailable state. Public anonymous conversion has no access to private properties.
+
+For a requested handoff, curate an orientation page, scope, readable deliverables, source register and open decisions. Private Properties/notes are not exported or shared implicitly. A project viewer bearer link covers current and future eligible documents, not a frozen snapshot or recipient-specific ACL. Prefer a dedicated delivery project when working content mixes audiences. Check exact contents and intended audience before an authorized link/export; use actual returned links. Publication, document sharing and project viewer links are distinct. See [actions and sharing](references/actions.md).
+
+On connection/service errors, use [connection recovery](references/connection-recovery.md).
